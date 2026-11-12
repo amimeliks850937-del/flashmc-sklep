@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASHMC.PL - Panel administratora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FLASH<span>MC.PL</span></h1>
+        <nav>
+            <a href="index.html">Wróć do sklepu</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>👑 PANEL ADMINISTRATORA</h2>
+            <p>Zarządzaj produktami swojego sklepu.</p>
+        </section>
+
+        <section>
+            <h2>➕ DODAJ PRODUKT</h2>
+
+            <div class="product">
+                <input id="nazwa" placeholder="Nazwa produktu">
+                <input id="cena" type="number" placeholder="Cena w zł">
+                <button onclick="dodajProdukt()">Dodaj produkt</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>📦 PRODUKTY</h2>
+            <div id="lista"></div>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
